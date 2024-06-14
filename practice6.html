@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 6</title>
+</head>
+<body>
+    <h3>This page demonstrate the forms and input tags</h3>
+    <br><br>
+    <form action="backend.php"> <!-- backend.php is the end point where all form data will be submitted -->
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id = "name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" id = "email">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB : </label>
+            <input type="date" id = "dob">
+        </div>
+        <br>
+        <div>
+            <label for="student">Are you student : </label>
+            <input type="checkbox" id = "student" checked> <!-- checked tag is used to set check box to checked by default -->
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name = "gender"> Female <input type="radio" name = "gender">
+        </div>
+        <br>
+        <div>
+            <label for="time">Average time when you sleep : </label>
+            <input type = "time" id = "time">
+        </div>
+        <br>
+        <div>
+            Which car company do you like most :
+            <select name="car" id="Car">
+                <option value="car" id = "mcd">Mercedes</option>
+                <option value="car" id = "audi">Audi</option>
+                <option value="car" id = "jgr">Jaguar</option>
+                <option value="car" id = "porshe">Porshe</option>
+                <option value="car" id = "rr" selected>Rollce Royce</option> <!-- selected tag is used to select default value -->
+                <option value="car" id = "tata">Tata</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="sugtn">Any Suggestions: </label>
+            <br>
+            <textarea name="suggestions" id="sugtn" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type = "submit" value = "Submit Now">
+            <input type = "reset" value = "Reset Now">
+        </div>
+    </form>  <!-- label is tag which selects the form box when we click on text related to that box-->
+</body>
+</html>
